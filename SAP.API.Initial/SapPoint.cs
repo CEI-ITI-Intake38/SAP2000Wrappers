@@ -82,10 +82,7 @@ namespace SAP.API.Initial
 
 
         #region Methods
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="restrains"></param>
+
         public void SetRestraint(Restrains restrains)
         {
             jointRestraint = new SapJointRestraint(restrains);
@@ -130,11 +127,7 @@ namespace SAP.API.Initial
         {
              return SapModel.PointObj.Count();
         }
-        /// <summary>
-        /// The number of point object names retrieved by the program.
-        /// </summary>
-        /// <param name="sapModel"></param>
-        /// <returns></returns>
+
         public static string[] GetNameList(cSapModel sapModel)
         {
             int NumberNames=0;

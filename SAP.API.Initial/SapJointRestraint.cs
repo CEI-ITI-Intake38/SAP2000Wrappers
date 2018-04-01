@@ -13,9 +13,6 @@ namespace SAP.API.Initial
         Roller,
         NoRestraint
     }
-    /// <summary>
-    /// 
-    /// </summary>
   public  class SapJointRestraint
     {
         private bool[] restrains;
@@ -26,12 +23,8 @@ namespace SAP.API.Initial
             set { restrains= value; }
         }
 
-        #region Constructors
-        /// <summary>
-        /// assigns the restraint assignments for a point object. 
-        /// The restraint assignments are always set in the point local coordinate system.
-        /// </summary>
-        /// <param name="RestrainType">default restraint types ex:fixed,roller</param>
+        #region Constructions
+
         public SapJointRestraint(Restrains RestrainType)
         {
             restrains = new bool[6];
@@ -63,15 +56,6 @@ namespace SAP.API.Initial
             
 
         }
-        /// <summary>
-        /// assigns the restraint assignments for a point object. 
-        /// The restraint assignments are always set in the point local coordinate system.        /// </summary>
-        /// <param name="U1"></param>
-        /// <param name="U2"></param>
-        /// <param name="U3"></param>
-        /// <param name="R1"></param>
-        /// <param name="R2"></param>
-        /// <param name="R3"></param>
         public void SetRestraint(bool U1,bool U2,bool U3,bool R1,bool R2,bool R3)
         {
             restrains[0] = U1;
